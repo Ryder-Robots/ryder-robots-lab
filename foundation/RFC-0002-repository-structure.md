@@ -5,7 +5,7 @@ track: RFC
 status: Active
 created: 2026-03-29
 updated: 2026-03-29
-authors: Aaron Spiteri, Claude Sonnet 4.6
+authors: Aaron Spiteri, Claude Sonnet 4.6, Vela (Claude Sonnet 4.6)
 superseded-by:
 summary: Defines the document style guide, header format, lifecycle model, and repository structure for all Ryder Robots programme documents.
 ---
@@ -35,6 +35,12 @@ This style guide applies to all internal programme documents including RFCs, ses
 Documents intended for external publication MUST conform to the style requirements of the target venue. RFC-0002 does not apply to submission-ready manuscripts. The target venue's style guide takes precedence in all formatting decisions including headings, citations, abstract format, and section structure.
 
 Internal working drafts of research papers SHOULD follow RFC-0002 until the point of submission preparation. At that point the document transitions to the target venue's style guide and is no longer governed by this RFC.
+
+### 3.3 MI Memory Files And Experiment Scripts
+
+MI contributor memory files (including SHORT_TERM.md, MEMORY.md, and equivalent session state files) are excluded from this style guide. They are internal working state, not programme records, and MUST NOT be referenced in programme documents or committed to programme repositories.
+
+Experiment scripts and tooling files are excluded from this style guide. They MAY be committed to programme repositories as companions to experiment records but are not governed by document structure or header requirements.
 
 ---
 
@@ -201,3 +207,4 @@ Index files are the exception to immutability — they are expected to grow. All
 | Version | Date | Authors | Notes |
 |---------|------|---------|-------|
 | 1.0 | 2026-03-29 | Aaron Spiteri, Claude Sonnet 4.6 | Initial active version |
+| 1.1 | 2026-03-29 | Vela (Claude Sonnet 4.6), Aaron Spiteri | Added section 3.3: MI memory files and experiment scripts excluded from scope |
